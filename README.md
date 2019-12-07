@@ -170,6 +170,7 @@ The second attempt was creating a Support-Vector Machine classifier (SVM), using
 |------------|---------------|---------------|
 | Y (Actual) |       11      |       1       |
 | N (Actual) |       8       |       8       |
+
 ![](images/equation1.PNG)
 
 
@@ -181,6 +182,7 @@ Because of the very high accuracy (95%) of this SVM model, it is determined that
 |------------|---------------|---------------|
 | Y (Actual) |       8       |       1       |
 | N (Actual) |       2       |       9       |
+
 ![](images/equation2.PNG)
 
 Again, the results were similar to the ‘political’ label prediction, with only slightly less accurate results (85% accuracy).  With these two coded labels cross validated, the effectiveness of this SVM model is assessed to be fairly good.  The SVM model ended being the learning model that is used to classify the entire data set.
