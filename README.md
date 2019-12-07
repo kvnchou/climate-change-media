@@ -204,3 +204,52 @@ Additionally, because the documents are all news articles, which report on real 
 
 #### Political Topic Classification
 The SVM model was applied to the entire span of articles collected (2000 - 2019) with a yearly breakdown.  First, the political topic was examined.  Given the nature of the political news coverage, included in the plot are the US presidential election years, as one could expect increase discussion of politics during election years.
+
+![](images/political-events.png)
+
+Even though the resolution of the analysis is fairly low, there does appear to be a spike on election years, especially in the year 2008 and onward.  However, given that the US Presidential elections are not the only noteworthy political events that can occur, it may be useful to look at other sources of spikes in the graph.
+
+Within the time span being analyzed, there were two particularly significant events in the world of climate politics.  The first event was the enactment of the Kyoto Protocol in 2006.  When exploring the data initially, the topic of the Kyoto Protocol appeared a lot.  Even though the Kyoto Protocol was first signed in 1997, there was continued discussion of the agreement for years to come, because the United States had refused to join the agreement.  Building a word cloud using the articles from the year 2005, one can see how that the term “kyoto” appears quite frequently, as it is one of the more substantial words near the center of the cloud.  A lot of the more common words or not particularly relevant to the topic of climate change.
+
+```
+set.seed(02138)
+m <- as.matrix(tdm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 10)
+
+library("wordcloud")
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE, rot.per=0.35,
+          colors=brewer.pal(8, "Dark2"))
+```
+
+![wordcloud](images/wordcloud.png)
+
+The second noteworthy event in this time span is the signing of the Paris Climate Accord in 2016.  A word cloud analysis was also performed for this year, but the climate accord did not appear significantly in the cloud, mostly overpowered by the eventful presidential election of that year.  Briefly looking at the occurrences of the term ‘climate change’, one can see the spike in mentions during late 2015 to early 2016, which was when the agreement was being drafted in Paris.
+
+![occurences of 'climate change'](images/occurences.png)
+
+![](images/political-events.png)
+
+With these two landmark events in mind, the plot once again shows spikes in the two years.  As noted above, the abrupt spike 2016 may not be an accurate representation because of the ongoing presidential election.  But with these insights, one can conclude that political discussions about climate change is largely dependent on newsworthy events that occur.  When there are large political events involving climate change, news coverage of the issue will also follow suit.
+
+![](images/poltical-reg.png)
+
+A simple linear regression of the data shows a mild increase in political discussions over the two decades, though it was not a significant increase.   However, this increase does match the increase in urgency over climate change found in the Gallup polls.  Logically, as Americans become more concerned with climate change and its effects, there will be more discussion about the political solutions to this problem.  The trend seen in this plot does support this idea.
+
+#### Economic Topic Classification
+
+The same classification was performed using the SVM model for the economic topic.  This resulting trends are shown below.
+
+![](images/economic-reg.png)
+
+This plot and regression line clearly show an increase in discussion about economics with climate change.  Using the same line of analysis as the political model, it may be interesting to examine noteworthy economic events around this time.  The most obvious choice would be the global recession starting in 2009.
+
+![](images/economic-event.png)
+
+Interesting enough, it appears that from 2009 and onward, the topic of economics and climate change occur more than before 2009.  Apparently, after experiencing an event on such a global scale, economics is a topic that is being discussed more than ever before, even when discussing climate change. The global recession was a pivotal event in modern history, with many lives being changed forever.  It would make sense that this event would have impacts that can still be seen today.
+
+![https://news.gallup.com/poll/1615/environment.aspx](images/gallup2.png)
+
+The Gallup poll also shows that Americans’ priority in economic growth also peaked around 2009-2010, matching the sharp increase seen in the plot above.  Even though the balance between environmental protection and economic growth has fallen back to pre-recession values now, it seems that the news media coverage on economics has remained at the same level.  This is a very interesting trend that shows how media coverage on climate change has evolved over time.
