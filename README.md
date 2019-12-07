@@ -7,6 +7,8 @@ You can use the [editor on GitHub](https://github.com/kvnchou/climate-change-med
 
 Media coverage on societal issues play a large role in shaping public opinion.  As seen in today’s “fake news” phenomenon, how citizens perceive the news can have wide reaching effects throughout the world.  In the past few decades, climate change has been a very divisive issue in the United States.  Based on polling conducted by Gallup, public opinion on climate change has often been nearly evenly split on either sides of the issue.
 
+![https://news.gallup.com/poll/1615/environment.aspx](images/gallup1.png)
+
 In this example survey conducted by Gallup in the United States, optimism surrounding the issue of climate change is measured.  In general, the amount of people who believe that public discourse on climate change is underestimated has been increasing over the last two decades.  This can also be interpreted as people becoming more pessimistic about this subject.  Public polling on the subject of climate change has been robust, and generally show that people are indeed becoming more pessimistic on the subject, especially as the effects of climate change have become more apparent in day to day life.
   
 Polls such as these demonstrate the importance that other societal issues play in the discussion of climate change. In the poll above, economic conditions of the country is pitted against the interest of protecting the environment.  This raises the question: how does our news sources present this balance of issues?  If economic issues are important to Americans, does news coverage of climate change incorporate economics as well?
