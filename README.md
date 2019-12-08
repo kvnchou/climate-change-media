@@ -255,7 +255,7 @@ The second noteworthy event in this time span is the signing of the Paris Climat
 
 With these two landmark events in mind, the plot once again shows spikes in the two years.  This only shows that there is a focus on climate politics whenever a relevant political event is ongoing.  As noted above, the abrupt spike 2016 may not be an accurate representation because of the ongoing presidential election.  But with these insights, one can conclude that political discussions about climate change is largely dependent on newsworthy events that occur.  When there are large political events involving climate change, news coverage of the issue will also follow suit.
 
-![](images/poltical-reg.png)
+![](images/political-reg.png)
 
 A simple linear regression of the data shows a mild increase in political discussions over the two decades, though it was not a significant increase.   However, this increase does match the increase in urgency over climate change found in the Gallup polls.  Logically, as Americans become more concerned with climate change and its effects, there will be more discussion about the political solutions to this problem.  The trend seen in this dataset does support this theory.
 
