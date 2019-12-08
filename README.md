@@ -147,7 +147,7 @@ Next, document term matrices were built for use with the supervised learning mod
 
 ```markdown
 dtm <- DocumentTermMatrix(corpus)
-tdm <- TermDocumentMatrix(corpus2)
+tdm <- TermDocumentMatrix(corpus)
 ```
 
 ### Coding a Training Set
