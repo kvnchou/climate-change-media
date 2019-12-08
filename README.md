@@ -42,6 +42,10 @@ In addition to using dictionary methods to classify the documents, a supervised 
 
 The process of developing a supervised learning model requires for a training data set to be code manually first.  This data set is then used to train a model to classify articles into the predetermined categories.  For the most part, supervised learning models utilize the bag of words method, which is a very simple way of extracting features from text.  In essence, documents are reduced down to their individual words, or “tokens”.  The tokens can be counted and converted into a vector format, such as a Document Term Matrix (DTM).  These matrices represent how often each term, or token, appear in a certain document.  This data structure is used by machine learning algorithms to develop classifier models.
 
+![](images/tdmdtm.png)
+
+[Source](https://rpubs.com/williamsurles/316682)
+
 To develop a supervised learning model for this research, a portion of the collected news articles will need to be manually coded for the two categories: political and economic.  A lot of this process comes down to manual judgement, as sometimes it can be hard to tell if an article is “focusing” on the political issues involved with climate change.  The key was to remain consistent throughout the process.
 
 ## Collecting the Data
