@@ -1,4 +1,4 @@
-# Examining Media Coverage on Climate Change
+# Examining Media Coverage of Climate Change
 
 ## Introduction
 
