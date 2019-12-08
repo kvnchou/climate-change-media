@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+---
+---
+body {
+  font-family: '{{ site.fonts.primary }}',{{ site.fonts.secondary }},Arial,sans-serif;
+}
