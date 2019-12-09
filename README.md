@@ -20,7 +20,7 @@ The goal of this research is to examine how news coverage of this issue has chan
   
 ## Research Question
 
-How has media coverage of climate change evolved over the years, in terms of optimism and topic choice (politics and economics)?
+**How has media coverage of climate change evolved over the years, in terms of optimism and topic choice (politics and economics)?**
 
 ## Methodology
 
