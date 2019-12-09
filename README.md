@@ -176,7 +176,7 @@ fit <- naiveBayes(cat~., data=df.train, kernel="linear")
 
 To determine the effectiveness of the model, a basic hold out cross validation was performed using the reserved test set.  Out of the 50 coded articles, 30 were randomly chosen to be in the training set, while the remaining 20 were used for validating the model.  The results were very poor, with no true positive results at all.  When faced with new data that the model has never seen before, the model is unable to classify the negative label.  Based on this trend, the Naives Bayes model is useless at categorizing the purpose of the articles, with the current preprocessing.
 
-**Naives Bayes - Political Label**
+*Naives Bayes - Political Label*
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
@@ -192,7 +192,7 @@ fit <- svm(cat~., data=df.train, kernel="linear")
 
 No preprocessing of the data was changed.  Using the same cross validation method, the results were much better, with a nearly perfect result.  Though the size of training and testing set was not very large, this simple cross validation still shows that this model is more capable of classifying my documents than the Naives Bayes model.
 
-**SVM - Political Label**
+*SVM - Political Label*
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
@@ -204,7 +204,7 @@ No preprocessing of the data was changed.  Using the same cross validation metho
 
 Because of the very high accuracy (95%) of this SVM model, it is determined that the model was actually able to classify the ‘political’ label well.  An additional round of simple validation was performed using the ‘economic label’.
 
-**SVM - Economic Label**
+*SVM - Economic Label*
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
