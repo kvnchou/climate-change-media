@@ -180,8 +180,8 @@ To determine the effectiveness of the model, a basic hold out cross validation w
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
-| Y (Actual) |       12      |       0       |
-| N (Actual) |       8       |       0       |
+|**Y (Actual)**|       12      |       0       |
+|**N (Actual)**|       8       |       0       |
 
 The second attempt was creating a Support-Vector Machine classifier (SVM), using the same training set as the Naive Bayes model.  No preprocessing of the data was changed.  Using the same cross validation method, the results were much better, with a nearly perfect result.  Though the size of training and testing set was not very large, this simple cross validation still shows that this model is more capable of classifying my documents than the Naives Bayes model.
 
@@ -189,8 +189,8 @@ The second attempt was creating a Support-Vector Machine classifier (SVM), using
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
-| Y (Actual) |       11      |       1       |
-| N (Actual) |       8       |       8       |
+|**Y (Actual)**|       11      |       1       |
+|**N (Actual)**|       8       |       8       |
 
 ![](images/equation1.PNG)
 
@@ -201,8 +201,8 @@ Because of the very high accuracy (95%) of this SVM model, it is determined that
 
 |            | Y (Predicted) | N (Predicted) |
 |------------|---------------|---------------|
-| Y (Actual) |       8       |       1       |
-| N (Actual) |       2       |       9       |
+|**Y (Actual)**|       8       |       1       |
+|**N (Actual)**|       2       |       9       |
 
 ![](images/equation2.PNG)
 
