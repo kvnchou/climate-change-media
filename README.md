@@ -183,7 +183,14 @@ To determine the effectiveness of the model, a basic hold out cross validation w
 |**Y (Actual)**|       12      |       0       |
 |**N (Actual)**|       8       |       0       |
 
-The second attempt was creating a Support-Vector Machine classifier (SVM), using the same training set as the Naive Bayes model.  No preprocessing of the data was changed.  Using the same cross validation method, the results were much better, with a nearly perfect result.  Though the size of training and testing set was not very large, this simple cross validation still shows that this model is more capable of classifying my documents than the Naives Bayes model.
+The second attempt was creating a Support-Vector Machine classifier (SVM), using the same training set as the Naive Bayes model.
+
+```
+library('e1071')
+fit <- svm(cat~., data=df.train, kernel="linear")
+```
+
+No preprocessing of the data was changed.  Using the same cross validation method, the results were much better, with a nearly perfect result.  Though the size of training and testing set was not very large, this simple cross validation still shows that this model is more capable of classifying my documents than the Naives Bayes model.
 
 **SVM - Political Label**
 
